@@ -1,8 +1,9 @@
 pub mod colors;
 pub mod styles;
+pub mod formatter;
 
-use colors::*;
-use styles::*;
+use colors::{Colors};
+use styles::{Styles};
 
 pub struct Chalk {
     string: String
@@ -10,17 +11,17 @@ pub struct Chalk {
 
 impl Chalk {
     pub fn chalk<'a>(color: Colors, string: &'a str) -> Chalk {
-        let color_code = color_code(color);
+        let color_code = colors::color_code(color);
 
         let chalk = Chalk{
-            string: format!("\x1B[{}m{}\x1B[0m", color_code, string)
+            string: formatter::format_output(color_code, string)
         };
 
         chalk
     }
 
     pub fn bg(&mut self, color: Colors) -> &mut Chalk {
-        self.string = format!("\x1B[{}m{}\x1B[0m", bg_color_code(color), &self.string);
+        self.string = formatter::format_output(colors::bg_color_code(color), &self.string);
         self
     }
 
@@ -59,9 +60,9 @@ impl Chalk {
     }
 
     fn style(style: Styles, string: &String) -> String {
-        let style_code = style_code(style);
+        let style_code = styles::style_code(style);
 
-        format!("\x1B[{}m{}\x1B[0m", style_code, string)
+        formatter::format_output(style_code, string)
     }
 }
 

@@ -1,12 +1,13 @@
 extern crate chalk;
 
-use chalk::colors::*;
+use chalk::colors::Colors::*;
 use chalk::Chalk;
 
 fn main() {
-    let red_bold = Chalk::chalk(Colors::Red, "Hello World")
+    let red_bold = Chalk::chalk(White, "Hello World")
         .underline()
-        .bg(Colors::Blue)
+        .bg(Red)
+        .fast_blink()
         .bold()
         .color();
 
