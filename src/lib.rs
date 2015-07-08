@@ -44,8 +44,8 @@ impl Chalk {
         self
     }
 
-    pub fn faint(&mut self) -> &mut Chalk {
-        self.string = Chalk::style(Styles::Faint, &self.string);
+    pub fn dim(&mut self) -> &mut Chalk {
+        self.string = Chalk::style(Styles::Dim, &self.string);
         self
     }
 

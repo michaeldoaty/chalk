@@ -1,6 +1,6 @@
 pub enum Styles {
     Bold,
-    Faint,
+    Dim,
     Italic,
     Underline,
     SlowBlink,
@@ -12,7 +12,7 @@ pub enum Styles {
 pub fn style_code(style: Styles) -> i32 {
     match style {
         Styles::Bold => 1,
-        Styles::Faint => 2,
+        Styles::Dim => 2,
         Styles::Italic => 3,
         Styles::Underline => 4,
         Styles::SlowBlink => 5,
