@@ -3,6 +3,13 @@ name = "chalk"
 version = "0.1.0"
 authors = ["Michael Doaty <michael.doaty@gmail.com>"]
 
+description = "Terminal styling library for rust"
+
+homepage = "https://github.com/michaeldoaty/chalk"
+repository = "https://github.com/michaeldoaty/chalk"
+
+license = "MIT"
+
 exclude = [
     "chalk.jpg"
 ]
