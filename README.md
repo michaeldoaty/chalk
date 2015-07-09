@@ -6,6 +6,14 @@
 # Chalk
 Chalk is a terminal styling library for rust.
 
+
+### Usage
+
+```toml
+[dependencies]
+chalk = "0.1.0"
+```
+
 ```rust
 extern crate chalk;
 
