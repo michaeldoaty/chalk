@@ -2,3 +2,7 @@
 name = "chalk"
 version = "0.1.0"
 authors = ["Michael Doaty <michael.doaty@gmail.com>"]
+
+exclude = [
+    "chalk.jpg"
+]
