@@ -4,13 +4,11 @@ use chalk::colors::Colors::*;
 use chalk::Chalk;
 
 fn main() {
-    let red_bold = Chalk::chalk(Blue, "Hello World")
+    let red_blue = Chalk::new(Red, "Hello World")
         .underline()
-        .bg(White)
-        .dim()
+        .bg(Blue)
         .bold()
         .color();
 
-    println!("{}", red_bold);
-
+    println!("{}", red_blue);
 }

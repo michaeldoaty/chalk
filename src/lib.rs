@@ -10,7 +10,7 @@ pub struct Chalk {
 }
 
 impl Chalk {
-    pub fn chalk<'a>(color: Colors, string: &'a str) -> Chalk {
+    pub fn new<'a>(color: Colors, string: &'a str) -> Chalk {
         let color_code = colors::color_code(color);
 
         let chalk = Chalk{
