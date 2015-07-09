@@ -1,5 +1,7 @@
 <h1 align="center">
-	<img height="320" src="https://raw.github.com/michaeldoaty/chalk/master/chalk.jpg" alt="chalk">
+	<a href="https://flic.kr/p/9WsQ5C">
+	  <img height="320" src="https://raw.github.com/michaeldoaty/chalk/master/chalk.jpg" alt="chalk">
+	<a/>
 </h1>
 # Chalk
 Chalk is a terminal styling library for rust.
